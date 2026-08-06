@@ -1,0 +1,364 @@
+/* =====================================
+   GOOGLE FONT
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================
+   GENERAL STYLING
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+    padding:45px;
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+section:hover{
+    transform:translateY(-4px);
+}
+
+section h2{
+    text-align:center;
+    font-size:34px;
+    color:#0d6efd;
+    margin-bottom:25px;
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#0d6efd;
+    display:block;
+    margin:12px auto;
+    border-radius:10px;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+    background:linear-gradient(135deg,#0d6efd,#5b8def);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:55px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+header p{
+    font-size:22px;
+    opacity:0.95;
+    letter-spacing:1px;
+}
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+.profile-image{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display:block;
+    margin:25px auto;
+    border:6px solid #0d6efd;
+    background:white;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.profile-image:hover{
+    transform:scale(1.08);
+}
+
+#about p{
+    text-align:justify;
+    font-size:18px;
+    color:#555;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.resume-button{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resume-button:hover{
+    background:#084298;
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(13,110,253,.3);
+}
+/* =====================================
+   SKILLS SECTION
+===================================== */
+
+.skills-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    list-style:none;
+    margin-top:25px;
+}
+
+.skills-list li{
+    background:#ffffff;
+    color:#0d6efd;
+    border:2px solid #0d6efd;
+    padding:15px 30px;
+    border-radius:50px;
+    font-weight:600;
+    font-size:18px;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.skills-list li:hover{
+    background:#0d6efd;
+    color:#ffffff;
+    transform:translateY(-8px);
+}
+
+/* =====================================
+   PROJECT SECTION
+===================================== */
+
+.project-card{
+    text-align:center;
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.project-card img{
+    width:100%;
+    max-width:550px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.project-card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.project-card p{
+    text-align:justify;
+    color:#555;
+    font-size:17px;
+}
+
+/* =====================================
+   RESUME SECTION
+===================================== */
+
+#resume{
+    text-align:center;
+}
+
+#resume p{
+    font-size:18px;
+    color:#555;
+}
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    display:inline-block;
+    background:#ffffff;
+    margin:12px;
+    padding:15px 25px;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    font-size:18px;
+    transition:.3s;
+}
+
+#contact p:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(13,110,253,.2);
+}
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+    background:#0d6efd;
+    color:#ffffff;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    font-size:16px;
+    letter-spacing:0.5px;
+}
+
+/* =====================================
+   SMOOTH ANIMATIONS
+===================================== */
+
+header,
+section,
+footer{
+    animation:fadeUp 0.8s ease-in-out;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================
+   IMAGE EFFECT
+===================================== */
+
+.project-card img:hover{
+    transform:scale(1.03);
+    transition:0.4s;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eeeeee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#084298;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media(max-width:768px){
+
+header{
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:36px;
+}
+
+header p{
+    font-size:18px;
+}
+
+section{
+    width:95%;
+    padding:25px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.profile-image{
+    width:140px;
+    height:140px;
+}
+
+.skills-list{
+    flex-direction:column;
+    align-items:center;
+}
+
+.skills-list li{
+    width:220px;
+    text-align:center;
+}
+
+.project-card img{
+    width:100%;
+}
+
+#contact p{
+    display:block;
+    width:100%;
+    margin:12px 0;
+}
+
+.resume-button{
+    width:100%;
+    text-align:center;
+}
+
+}
